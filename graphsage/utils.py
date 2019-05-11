@@ -36,7 +36,7 @@ def load_data(prefix, normalize=True, load_walks=False):
     id_map = json.load(open(prefix + "-id_map.json"))
     # print(id_map)
     id_map = {conversion(k): int(v) for k, v in id_map.items()}
-    print(id_map)
+    # print(id_map)
     walks = []
     class_map = json.load(open(prefix + "-class_map.json"))
     if isinstance(list(class_map.values())[0], list):
